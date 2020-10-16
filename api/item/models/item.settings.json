@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "items",
+  "info": {
+    "name": "Item"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Amount": {
+      "type": "integer"
+    },
+    "unit_price": {
+      "type": "integer"
+    },
+    "total_price": {
+      "type": "integer"
+    },
+    "stocked_date": {
+      "type": "datetime"
+    },
+    "remark": {
+      "type": "string"
+    },
+    "recorded_by": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}
